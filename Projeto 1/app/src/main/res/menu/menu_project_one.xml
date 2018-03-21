@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/projeto1"
+        android:icon="@drawable/counter"
+        android:title="@string/unidade1_projeto1" />
+    <item
+        android:id="@+id/projeto2"
+        android:icon="@drawable/counter"
+        android:title="@string/unidade1_projeto2" />
+    <item
+        android:id="@+id/projeto3"
+        android:icon="@drawable/counter"
+        android:title="@string/unidade1_projeto3" />
+    <item
+        android:id="@+id/projeto4"
+        android:icon="@drawable/counter"
+        android:title="@string/unidade1_projeto4" />
+    <item
+        android:id="@+id/projeto5"
+        android:icon="@drawable/counter"
+        android:title="@string/unidade1_projeto5" />
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Unidade 1">
+        <menu>
+            <item
+                android:id="@+id/binary_machine"
+                android:icon="@drawable/counter"
+                android:title="Máquina Binária" />
+            <item
+                android:id="@+id/simulator"
+                android:icon="@drawable/counter"
+                android:title="@string/simulator" />
+            <item
+                android:id="@+id/bisection"
+                android:icon="@drawable/counter"
+                android:title="@string/bisection" />
+        </menu>
+    </item>
+
+</menu>
