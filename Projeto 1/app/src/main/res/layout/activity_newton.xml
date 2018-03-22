@@ -30,7 +30,8 @@
             android:id="@+id/et_first_approximation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/firts_approximation" />
+            android:hint="@string/firts_approximation"
+            android:inputType="number|numberSigned|numberDecimal" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -41,7 +42,9 @@
             android:id="@+id/et_tolerance_n"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_tolerance" />
+            android:hint="@string/enter_tolerance"
+            android:inputType="number|numberSigned|numberDecimal" />
+
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -52,7 +55,9 @@
             android:id="@+id/et_repetition_n"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_repeat" />
+            android:hint="@string/enter_repeat"
+            android:inputType="number|numberSigned|numberDecimal" />
+
     </android.support.design.widget.TextInputLayout>
 
     <TextView

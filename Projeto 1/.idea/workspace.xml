@@ -70,15 +70,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Bissection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/Bissection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="8" column="109" lean-forward="false" selection-start-line="8" selection-start-column="94" selection-end-line="8" selection-end-column="109" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="activity_bisection.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bisection.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="140">
+              <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+              <folding>
+                <element signature="e#2439#2464#0" expanded="true" />
+                <element signature="e#2953#2975#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,18 +102,10 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="77" column="43" lean-forward="false" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+            <state relative-caret-position="297">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
-                <element signature="e#361#384#0" expanded="true" />
-                <element signature="e#409#432#0" expanded="true" />
-                <element signature="e#458#481#0" expanded="true" />
-                <element signature="e#505#528#0" expanded="true" />
-                <element signature="e#973#997#0" expanded="true" />
                 <element signature="e#1429#1458#0" expanded="true" />
-                <element signature="e#1882#1907#0" expanded="true" />
-                <element signature="e#2332#2354#0" expanded="true" />
-                <element signature="e#3238#3257#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,7 +136,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_simulator.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_simulator.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_simulator.xml">
           <provider selected="true" editor-type-id="android-designer2">
             <state />
@@ -149,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="NewtonRaphson.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/NewtonRaphson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="35" column="66" lean-forward="false" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+            <state relative-caret-position="480">
+              <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -173,31 +178,20 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/BisectionActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="27" column="5" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+              <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main_drawer.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <file leaf-file-name="NewtonActivity.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/NewtonActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="344">
+              <caret line="35" column="41" lean-forward="false" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+              <folding>
+                <element signature="e#51#716#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2033,22 +2027,22 @@
         <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/BissectionActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/BissecionActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_bissecion.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_bisection.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/Diferenciation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/NumericMethod.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/StopCriteria.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/NewtonRaphson.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/NearToZero.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/BisectionActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_newton.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/NewtonActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/Simulator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/SimulatorActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_simulator.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/BisectionActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/NewtonActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_bisection.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_newton.xml" />
       </list>
     </option>
   </component>
@@ -3355,7 +3349,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521720569283" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521721286990" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3402,7 +3396,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521720569283" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521721286990" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3584,7 +3578,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521720569293" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521721286992" />
       </method>
     </configuration>
     <list size="1">
@@ -3953,16 +3947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/Bissection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="66" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/NumericMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3987,22 +3971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/NewtonRaphson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2084#2085#0" expanded="false" />
-            <element signature="e#2130#2131#0" expanded="false" />
-            <element signature="e#2185#2186#0" expanded="false" />
-            <element signature="e#2232#2233#0" expanded="false" />
-            <element signature="e#2278#2279#0" expanded="false" />
-            <element signature="e#2325#2326#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/NearToZero.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -4017,25 +3985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bisection.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/BisectionActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -4059,50 +4008,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_newton.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="77" column="43" lean-forward="false" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
-          <folding>
-            <element signature="e#361#384#0" expanded="true" />
-            <element signature="e#409#432#0" expanded="true" />
-            <element signature="e#458#481#0" expanded="true" />
-            <element signature="e#505#528#0" expanded="true" />
-            <element signature="e#973#997#0" expanded="true" />
-            <element signature="e#1429#1458#0" expanded="true" />
-            <element signature="e#1882#1907#0" expanded="true" />
-            <element signature="e#2332#2354#0" expanded="true" />
-            <element signature="e#3238#3257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="35" column="66" lean-forward="false" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/NewtonActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding>
-            <element signature="e#51#716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4139,6 +4049,75 @@
             <element signature="e#375#398#0" expanded="true" />
             <element signature="e#422#445#0" expanded="true" />
             <element signature="e#472#495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/Bissection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" column="109" lean-forward="false" selection-start-line="8" selection-start-column="94" selection-end-line="8" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bisection.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+          <folding>
+            <element signature="e#2439#2464#0" expanded="true" />
+            <element signature="e#2953#2975#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_newton.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#1429#1458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/BisectionActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Helpers/NewtonRaphson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/calcnumerico/ph/maquinabinaria/Activities/NewtonActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="35" column="41" lean-forward="false" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <element signature="e#51#716#0" expanded="true" />
           </folding>
         </state>
       </provider>

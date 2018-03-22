@@ -20,10 +20,16 @@ class BisectionActivity : AppCompatActivity() {
     }
     @SuppressLint("SetTextI18n")
     fun calcRoot(view: View){
-        txt_result.text = "Raiz: ${Bissection.calculate(et_function.text.toString(),
-                et_range_a.text.toString().toDouble(),
-                et_range_b.text.toString().toDouble(),
-                et_tolerance.text.toString().toDouble(),
-                et_repetition.text.toString().toInt()).toString()}"
+        try {
+            val calc = Bissection.calculate(et_function.text.toString(),
+                    et_range_a.text.toString().toDouble(),
+                    et_range_b.text.toString().toDouble(),
+                    et_tolerance.text.toString().toDouble(),
+                    et_repetition.text.toString().toInt())
+            txt_result.text = "Raiz: $calc"
+        }catch (e: Exception){
+            txt_result.text = e.message
+        }
+
     }
 }

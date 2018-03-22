@@ -30,7 +30,8 @@
             android:id="@+id/et_range_a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_ranger_a" />
+            android:hint="@string/enter_ranger_a"
+            android:inputType="number|numberSigned|numberDecimal" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -41,7 +42,8 @@
             android:id="@+id/et_range_b"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_range_b" />
+            android:hint="@string/enter_range_b"
+            android:inputType="number|numberSigned|numberDecimal" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -52,7 +54,8 @@
             android:id="@+id/et_tolerance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_tolerance" />
+            android:hint="@string/enter_tolerance"
+            android:inputType="number|numberSigned|numberDecimal" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -63,7 +66,8 @@
             android:id="@+id/et_repetition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_repeat" />
+            android:hint="@string/enter_repeat"
+            android:inputType="number|numberSigned|numberDecimal" />
     </android.support.design.widget.TextInputLayout>
 
     <TextView
