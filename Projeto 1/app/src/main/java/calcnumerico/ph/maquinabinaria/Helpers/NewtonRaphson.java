@@ -1,7 +1,7 @@
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
-import javax.naming.OperationNotSupportedException;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
 *   This class it's a Newton-Raphson numerical method, the now and only function
@@ -53,32 +53,17 @@ public class NewtonRaphson implements NumericMethod  {
 
     @Override
     public int hashCode() {
-        try {
-            throw new OperationNotSupportedException("Not implemented yet, or maybe never would be");
-        } catch (OperationNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return super.hashCode();
+       throw new NotImplementedException();
     }
 
     @Override
     public boolean equals(Object obj) {
-        try {
-            throw new OperationNotSupportedException("Not implemented yet, or maybe never would be");
-        } catch (OperationNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return super.equals(obj);
+        throw new NotImplementedException();
     }
 
     @Override
     public String toString() {
-        try {
-            throw new OperationNotSupportedException("Not implemented yet, or maybe never would be");
-        } catch (OperationNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return super.toString();
+        throw new NotImplementedException();
     }
 
 }
