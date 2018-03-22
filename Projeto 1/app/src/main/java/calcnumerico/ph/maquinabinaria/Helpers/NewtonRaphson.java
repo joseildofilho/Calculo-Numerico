@@ -1,7 +1,7 @@
+package calcnumerico.ph.maquinabinaria.Helpers;
+
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
-
-import javax.naming.OperationNotSupportedException;
 
 /**
 *   This class it's a Newton-Raphson numerical method, the now and only function
@@ -10,7 +10,7 @@ import javax.naming.OperationNotSupportedException;
 * @version 0.0.000001
 * @author Joseildo Mariano S Filho
 * */
-public class NewtonRaphson implements NumericMethod  {
+public class NewtonRaphson implements NumericMethod {
 
     private String expression;
     private Expression expressionObj;
@@ -54,8 +54,8 @@ public class NewtonRaphson implements NumericMethod  {
     @Override
     public int hashCode() {
         try {
-            throw new OperationNotSupportedException("Not implemented yet, or maybe never would be");
-        } catch (OperationNotSupportedException e) {
+            throw new UnsupportedOperationException("Not implemented yet, or maybe never would be");
+        } catch (UnsupportedOperationException e) {
             e.printStackTrace();
         }
         return super.hashCode();
@@ -64,8 +64,8 @@ public class NewtonRaphson implements NumericMethod  {
     @Override
     public boolean equals(Object obj) {
         try {
-            throw new OperationNotSupportedException("Not implemented yet, or maybe never would be");
-        } catch (OperationNotSupportedException e) {
+            throw new UnsupportedOperationException("Not implemented yet, or maybe never would be");
+        } catch (UnsupportedOperationException e) {
             e.printStackTrace();
         }
         return super.equals(obj);
@@ -74,8 +74,8 @@ public class NewtonRaphson implements NumericMethod  {
     @Override
     public String toString() {
         try {
-            throw new OperationNotSupportedException("Not implemented yet, or maybe never would be");
-        } catch (OperationNotSupportedException e) {
+            throw new UnsupportedOperationException("Not implemented yet, or maybe never would be");
+        } catch (UnsupportedOperationException e) {
             e.printStackTrace();
         }
         return super.toString();

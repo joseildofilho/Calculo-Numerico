@@ -24,7 +24,8 @@
             android:name="calcnumerico.ph.maquinabinaria.Activities.BinaryMachineActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name="calcnumerico.ph.maquinabinaria.Activities.SimulatorActivity" />
-        <activity android:name="calcnumerico.ph.maquinabinaria.Activities.BisectionActivity"></activity>
+        <activity android:name="calcnumerico.ph.maquinabinaria.Activities.BisectionActivity" />
+        <activity android:name="calcnumerico.ph.maquinabinaria.Activities.NewtonActivity"></activity>
     </application>
 
 </manifest>

@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
         BottomNavigationViewHelper.removeShiftMode(navigation)
         nav_view.setNavigationItemSelectedListener(this)
+
     }
 
     override fun onBackPressed() {
@@ -56,6 +57,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.bisection -> {
                 startActivity(Intent(this, BisectionActivity::class.java))
+            }
+            R.id.newton -> {
+                startActivity(Intent(this, NewtonActivity::class.java))
             }
 
         }

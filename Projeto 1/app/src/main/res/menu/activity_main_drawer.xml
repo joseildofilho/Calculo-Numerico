@@ -17,6 +17,10 @@
                 android:id="@+id/bisection"
                 android:icon="@drawable/counter"
                 android:title="@string/bisection" />
+            <item
+                android:id="@+id/newton"
+                android:icon="@drawable/counter"
+                android:title="@string/newton" />
         </menu>
     </item>
 

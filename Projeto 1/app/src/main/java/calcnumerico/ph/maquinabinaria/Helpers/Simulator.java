@@ -1,6 +1,4 @@
-import javax.management.AttributeValueExp;
-import java.math.BigDecimal;
-import java.math.BigInteger;
+package calcnumerico.ph.maquinabinaria.Helpers;
 
 public class Simulator {
     private long B,t, under, over;

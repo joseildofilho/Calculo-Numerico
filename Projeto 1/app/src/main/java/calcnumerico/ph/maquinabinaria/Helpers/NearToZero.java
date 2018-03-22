@@ -1,5 +1,9 @@
+package calcnumerico.ph.maquinabinaria.Helpers;
+
 import net.objecthunter.exp4j.Expression;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
+import kotlin.NotImplementedError;
+
 
 public class NearToZero implements StopCriteria {
     private double diff;
@@ -16,7 +20,7 @@ public class NearToZero implements StopCriteria {
         return false;
     }
 
-    public boolean compare(Exception exp, int a, int b) throws NotImplementedException {
-        throw new NotImplementedException();
+    public boolean compare(Exception exp, int a, int b) throws NotImplementedError {
+        throw new NotImplementedError();
     }
 }
