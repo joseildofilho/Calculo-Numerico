@@ -1,58 +1,142 @@
-import javax.management.AttributeValueExp;
+package calcnumerico.ph.maquinabinaria.Helpers;
+
+import net.objecthunter.exp4j.Expression;
+import net.objecthunter.exp4j.ExpressionBuilder;
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Simulator {
-    private long B,t, under, over;
-    public final long size;
-    public Simulator(long b, long t, long under, long over) {
-        this.B = b;
-        this.t = t;
-        this.under = under;
-        this.over = over;
+    private int base;
+    private int precision;
+    private int lower;
+    private int upper;
+    private double epslon;
+    private double max;
 
-        size = (long) (2 * (b - 1) * Math.pow(b,(t-1)) * (over - under + 1) + 1);
-    }
-
-    public String sum(double x, double y) {
-        double X = format(x);
-        double Y = format(y);
-        return String.valueOf(format(X+Y));
-    }
-
-    public String sub(double x, double y) {
-        return sum(x,-y);
-    }
-    /*
-    * Return the number formated to the system
-    * */
-    public double format(double x) throws ArithmeticException {
-        String y = Double.toString(x > 0? x: -x);
-        if(x == 0.0) return 0.0;
-        int index = y.indexOf(".");
-
-        if((x > 1 || x < -1)) {
-            if(index >= over) throw new ArithmeticException("your value is too big" + x);
-            String aux = y.substring(0, index);
-            String aux2 = y.substring(index, (int) (t + 1));
-            System.out.println(aux.length());
-            if(x > 0) return Double.parseDouble(aux.concat(aux2));
-            else return Double.parseDouble("-" + aux.concat(aux2));
-        } else {
-            int indexZeros = 0;
-            for(char a: y.substring(index).toCharArray())
-                if(a == '0') indexZeros ++;
-                else break;
-            if(-indexZeros < under) throw new ArithmeticException("your value is too small" + x
-            );
-            if(x > 0) return Double.parseDouble("0.".concat(y.substring(index + 1, (int) (index + this.t + 1))));
-            else return Double.parseDouble("-0.".concat(y.substring(index + 1, (int) (index + this.t + 1))));
-
+    public Simulator(int base, int precision, int lower, int upper) {
+        this.base = base;
+        this.precision = precision;
+        this.lower = lower;
+        this.upper = upper;
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("0.");
+        for(int i = 0; i < precision - 1; i++){
+            stringBuilder.append("0");
         }
+        stringBuilder.append("1");
+        this.epslon = Double.parseDouble(stringBuilder.toString()) * Math.pow(base, lower);
+
+        stringBuilder = new StringBuilder();
+        for(int i = 0; i < precision; i++){
+            stringBuilder.append("9");
+        }
+        this.max = Double.parseDouble(stringBuilder.toString()) * Math.pow(base, upper);
     }
-    public static void main(String args []) {
-        Simulator sim = new Simulator(10,3,-5,5);
-        System.out.println(sim.sum(0.403,7.65));
-        System.out.println(sim.sub(1.39,0.987));
+
+    public String operations(String exp) throws ArithmeticException {
+        Expression e = new ExpressionBuilder(exp).build();
+        return normalize(e.evaluate());
+    }
+
+    public String normalize(double value) throws ArithmeticException {
+        boolean flag = false;
+        if (value < 0) {
+            flag = true;
+            value = Math.abs(value);
+        }
+        int exp = 0;
+        if (value < 1) {
+            if (Math.abs(value) < Math.abs(epslon)) {
+                throw new ArithmeticException("Value " + value + " too low for precision " + precision);
+            } else {
+                while (value < 0.1) {
+                    exp--;
+                    value *= base;
+                }
+                if (exp < lower)
+                    throw new ArithmeticException("Value " + value + " too low for lower exp " + lower);
+            }
+        } else {
+            if (Math.abs(value) > Math.abs(max)) {
+                throw new ArithmeticException("Value " + value + " too high for precision " + precision);
+            } else {
+                while (value >= 1) {
+                    exp++;
+                    value /= base;
+                }
+                if (exp > upper)
+                    throw new ArithmeticException("Value " + value + " high for upper exp " + upper);
+            }
+        }
+
+        value = Math.round(value * Math.pow(base, upper-lower+1)) / Math.pow(base, upper-lower+1);
+
+        if(String.valueOf(value).length() > precision + 2)
+            throw new ArithmeticException("Value " + value + " can't be represented with precison " + precision);
+
+        if(flag)
+            return "-" + value + "*" + base + "e" + exp;
+        else
+            return value + "*" + base + "e" + exp;
+
+    }
+
+    public String[] getAllValues() {
+        ArrayList<String> strings = new ArrayList<>();
+        long max = base - 1;
+        for (int i = 0; i < precision - 1; i++) {
+            max *= base;
+        }
+        max *= 2 * (upper - lower + 1);
+
+        StringBuilder stringBuilder = new StringBuilder();
+        double scale_factor = 1 * Math.pow(base, lower);
+        double value = -0.1 * Math.pow(base, lower);
+        double epslon_base = -1 * epslon;
+        String normalized = "";
+        for (int i = 0; i < max; i++) {
+            if(value/scale_factor == -1){
+                scale_factor *= base;
+                epslon_base *= base;
+            }
+            if(scale_factor == Math.pow(base, (upper-lower) + 1)){
+                break;
+            }
+            try {
+                normalized = normalize(value);
+                strings.add(normalized);
+            }catch (ArithmeticException e){
+                break;
+            }
+            value += epslon_base;
+            value = Math.round(value * Math.pow(base, (upper-lower)+1)) / Math.pow(base, (upper-lower)+1);
+        }
+
+        Collections.reverse(strings);
+        strings.add("0");
+        value = 0.1 * Math.pow(base, lower);
+        epslon_base = epslon;
+        scale_factor = 1 * Math.pow(base, lower);
+        normalized = "";
+        for (int i = 0; i < max; i++) {
+            if(value/scale_factor == 1){
+                scale_factor *= base;
+                epslon_base *= base;
+            }
+            if(scale_factor == Math.pow(base, (upper-lower) + 1))
+                break;
+            try {
+                normalized = normalize(value);
+                strings.add(normalized);
+            }catch (ArithmeticException e){
+                break;
+            }
+            value += epslon_base;
+            value = Math.round(value * Math.pow(base, upper-lower+1)) / Math.pow(base, upper-lower+1);
+        }
+        return strings.toArray(new String[strings.size()]);
     }
 }

@@ -1,3 +1,5 @@
+package calcnumerico.ph.maquinabinaria.Helpers;
+
 import net.objecthunter.exp4j.Expression;
 
 public interface StopCriteria {
