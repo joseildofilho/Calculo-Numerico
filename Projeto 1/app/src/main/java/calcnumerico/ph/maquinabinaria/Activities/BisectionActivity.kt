@@ -18,12 +18,12 @@ class BisectionActivity : AppCompatActivity() {
         Log.i("Bissecção", Bissection.calculate("x^2+log(x)", 0.5, 1.0, 0.05, 100 ).toString())
 
     }
-    fun calcRaiz(view: View){
+    @SuppressLint("SetTextI18n")
+    fun calcRoot(view: View){
         txt_result.text = "Raiz: ${Bissection.calculate(et_function.text.toString(),
                 et_range_a.text.toString().toDouble(),
                 et_range_b.text.toString().toDouble(),
                 et_tolerance.text.toString().toDouble(),
                 et_repetition.text.toString().toInt()).toString()}"
-
     }
 }

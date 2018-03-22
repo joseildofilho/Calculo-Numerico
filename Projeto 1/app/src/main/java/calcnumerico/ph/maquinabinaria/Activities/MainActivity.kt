@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
         BottomNavigationViewHelper.removeShiftMode(navigation)
         nav_view.setNavigationItemSelectedListener(this)
-
     }
 
     override fun onBackPressed() {

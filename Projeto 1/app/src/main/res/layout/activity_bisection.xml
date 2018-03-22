@@ -86,7 +86,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:background="@drawable/button_border"
-            android:onClick="calcRaiz"
+            android:onClick="calcRoot"
             android:text="@string/calculate"
             android:textColor="@android:color/white" />
     </RelativeLayout>

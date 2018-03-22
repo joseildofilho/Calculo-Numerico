@@ -3,6 +3,9 @@ package calcnumerico.ph.maquinabinaria.Helpers;
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
+import kotlin.NotImplementedError;
+
+
 /**
 *   This class it's a Newton-Raphson numerical method, the now and only function
 * it's make a calculation of one number.
@@ -10,7 +13,7 @@ import net.objecthunter.exp4j.ExpressionBuilder;
 * @version 0.0.000001
 * @author Joseildo Mariano S Filho
 * */
-public class NewtonRaphson implements NumericMethod {
+public class NewtonRaphson implements NumericMethod  {
 
     private String expression;
     private Expression expressionObj;
@@ -53,32 +56,17 @@ public class NewtonRaphson implements NumericMethod {
 
     @Override
     public int hashCode() {
-        try {
-            throw new UnsupportedOperationException("Not implemented yet, or maybe never would be");
-        } catch (UnsupportedOperationException e) {
-            e.printStackTrace();
-        }
-        return super.hashCode();
+       throw new NotImplementedError();
     }
 
     @Override
     public boolean equals(Object obj) {
-        try {
-            throw new UnsupportedOperationException("Not implemented yet, or maybe never would be");
-        } catch (UnsupportedOperationException e) {
-            e.printStackTrace();
-        }
-        return super.equals(obj);
+        throw new NotImplementedError();
     }
 
     @Override
     public String toString() {
-        try {
-            throw new UnsupportedOperationException("Not implemented yet, or maybe never would be");
-        } catch (UnsupportedOperationException e) {
-            e.printStackTrace();
-        }
-        return super.toString();
+        throw new NotImplementedError();
     }
 
 }

@@ -31,5 +31,6 @@
     <string name="enter_repeat">DIgite o número máximo de iterações</string>
     <string name="bisection">Bissecção</string>
     <string name="calculate">Calcular raiz</string>
+    <string name="firts_approximation">Primeira aproximação</string>
     <string name="newton">Newton-Raphson</string>
 </resources>
